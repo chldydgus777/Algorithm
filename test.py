@@ -1,4 +1,5 @@
-# 111
+# 사칙연산
+# ----------10869------------------------------
 # a,b = input().split()
 # a = int(a)
 # b = int(b)
@@ -10,8 +11,8 @@
 # print(a % b)
 
 
-
-# 222
+# 곱셈
+#------------------------------2588------------------------------
 # a = int(input())
 # b = int(input())
 
@@ -21,8 +22,8 @@
 # print(a*b)
 
 
-
-# 333
+# 알람시계
+#------------------------------2884------------------------------
 # H,M = input().split()
 # H = int(H)
 # M = int(M)
@@ -40,9 +41,8 @@
 # print(wake_up_hour, wake_up_minute)
 
 
-
-
-# 444
+# 더하기사이클
+#------------------------------1110------------------------------
 # start = int(input())
 # instead = start
 # other = 101
@@ -57,57 +57,62 @@
 
 # print(num)
 
-# 555
 
-# for x in range(int(input())):
-#    i = list(map(int, input().split()))
-#    j = sum(i[1:]) / i[0]
-#    count = 0
-#    for k in i[1:]:
-#        if j > average :
-#            count += 1 
-#            print (j)
+# 평균은 넘겠지
+#------------------------------4344------------------------------
+# for i in range(int(input())):
+#     j = list(map(int, input().split()))
+#     average = sum(j[1:]) / j[0]
+#     cnt = 0 
+#     for l in range(1, len(j)):
+#         if j[l] > average : 
+#             cnt += 1  
+#     st_aver = (cnt / j[0] * 100)
+#     print(format(st_aver, ".3f")+"%")
 
 
-# # # 각 케이스마다 한 줄씩 평균을 넘는 
-# # # 학생들의 비율을 반올림하여 소수점 셋째 자리까지 출력한다.
+# 셀프넘버
+#------------------------------4673------------------------------
+def d(n):
+    value = n 
+    for c in list(str(n)) :
+        value += int(c)
+    return value
 
-# 5
-# 5 50 50 70 80 100
-# 7 100 95 90 80 70 60 50
-# 3 70 90 80
-# 3 70 90 81
-# 9 100 99 98 97 96 95 94 93 91
-
-# n = int(input()) 
-
-# for i in range(0,n): 
-#     # range는 0번부터 n번까지 돌린다 n값이 들어오면 0-n까지 for가 돔
-#     l = list(input().split())
-#     sum = 0
-#     studentNum = int(l[0])
+DAEHO = []
+for l in range(1,10001):
+    DAEHO.append(d(l))
+for i in range(1,10001):
+    if i not in DAEHO :
+        print(i)
+        
     
-#     for j in range(1,len(l)): 
-# #len은 length, range를 1부터 돌리는 이유는 성적이 1번부터 담겨있기때문에
-#         sum +=int(l[j])
-#         # 각 점수의 합계를 구한다
-#     avg = sum/studentNum #평균을 구함
-#     cnt = 0
-#     for k in range(1,len(l)): 
-#         if int(l[k]) > avg :
-#             cnt += 1
 
-#     percent = cnt / studentNum * 100 
-#     # 퍼센트로 만들어주기위해 100을 곱해줌
-#     print("%.3f" % percent + "%")
-#     # %.3f % 퍼센트의 소수점을 제한하는 치트시트
 
-for i in range(int(input())):
-    j = list(map(int, input().split()))
-    average = sum(j[1:]) / j[0]
-    cnt = 0 
-    for l in range(1, len(j)):
-        if j[l] > average : 
-            cnt += 1 
-    st_aver = (cnt / j[0] * 100)
-    print(format(st_aver, ".3f")+"%")
+
+#단어공부
+#------------------------------1157------------------------------
+
+
+
+
+#크로아티아 알파벳
+#------------------------------2941------------------------------
+
+
+
+
+#달팽이는 올라가고싶다
+#------------------------------2869------------------------------
+
+
+
+
+#ACM 호텔
+#------------------------------10250------------------------------
+
+
+
+
+#소수 구하기
+#------------------------------1929------------------------------
