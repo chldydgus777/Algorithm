@@ -75,44 +75,51 @@
 #----------------------------------------4673----------
 # def d(n):
 #     value = n
-#         for c in str(n) :
+#     for c in str(n):
 #         value += int(c)
 #     return value
 
-# DAEHO = []
+# list = []
 # for l in range(1,10001):
-#     DAEHO.append(d(l))
+#     list.append(d(l))
+
 # for i in range(1,10001):
-#     if i not in DAEHO :
+#     if i not in list :
 #         print(i)
 
 
 #단어공부
 #----------------------------------------1157----------
+# a = input().upper()
 
-a = input().upper()
-bet = list(set(a))
-count = 0
-b = []
-for char in bet:
-    cnt = a.count(char)
-    if cnt >= count :
-        if cnt == count :
-            b.append(char)
-        else :
-            b = []
-            b.append(char)
-        count =  cnt
-if len(b) >= 2 :
-    print('?')
-else :
-    print(b[0])
+# bet = list(set(a))
+# count = 0
+# b = []
+# for char in bet:
+#     cnt = a.count(char)
+#     if cnt >= count :
+#         if cnt == count :
+#             b.append(char)
+#         else :
+#             b = []
+#             b.append(char)
+#         count =  cnt
+# if len(b) >= 2 :
+#     print('?')
+# else :
+#     print(b[0])
 
 
 #크로아티아 알파벳
 #----------------------------------------2941----------
+alphabet = str(input())
 
+Croatia_list = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
+for i in Croatia_list: 
+    alphabet = alphabet.replace(i,'*')
+
+print(len(alphabet))
 
 
 #달팽이는 올라가고싶다
