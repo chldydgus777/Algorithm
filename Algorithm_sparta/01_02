@@ -1,0 +1,5 @@
+#print("a".isalpha())   #True
+#print("1".isalpha())   #False
+
+#s = "abcdefg"
+#print(s[0].isalpha())  #True
