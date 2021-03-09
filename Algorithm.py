@@ -112,20 +112,33 @@
 
 #크로아티아 알파벳
 #----------------------------------------2941----------
-alphabet = str(input())
+# alphabet = str(input())
 
-Croatia_list = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+# Croatia_list = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-for i in Croatia_list: 
-    alphabet = alphabet.replace(i,'*')
+# for i in Croatia_list: 
+#     alphabet = alphabet.replace(i,'*')
 
-print(len(alphabet))
+# print(len(alphabet))
 
 
 #달팽이는 올라가고싶다
 #----------------------------------------2869----------
+up, down, top = input().split()
 
+up = int(up)
+down = int(down)
+top = int(top)
 
+day1 = up-down
+dayT = ((top - up) / day1)
+
+if int(dayT) < dayT:
+    dayT = dayT + 2
+else:
+    dayT = dayT + 1
+
+print(int(dayT))
 
 
 #ACM 호텔
