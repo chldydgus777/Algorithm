@@ -124,28 +124,31 @@
 
 #달팽이는 올라가고싶다
 #----------------------------------------2869----------
-up, down, top = input().split()
+# up, down, top = map(int, (input().split()))
 
-up = int(up)
-down = int(down)
-top = int(top)
+# day = (top - down) / (up - down)
 
-day1 = up-down
-dayT = ((top - up) / day1)
-
-if int(dayT) < dayT:
-    dayT = dayT + 2
-else:
-    dayT = dayT + 1
-
-print(int(dayT))
+# if int(day) == day:
+#     print(int(day))
+# else:
+#     print(int(day) + 1)
 
 
 #ACM 호텔
 #----------------------------------------10250----------
+# a = int(input())
 
-
+#     for i in range(a):
+#         h, w, n = map(int, input().split())
+#         if h % n == 0:
+#             room = (n // h)
+#             floor = h * 100
+#         else :
+#             room = (n // h) + 1
+#             floor = (n % h) * 100
+#         print(floor + room)
 
 
 #소수 구하기
 #----------------------------------------1929----------
+
