@@ -167,15 +167,3 @@
 # for i in range(m, n+1 ):
 #     if prime(i):
 #         print(i)
-
-
-
-n = int(input())
-n = int(input())
-n = int(input())
-n = int(input())
-n = int(input())
-n = int(input())
-
-for i in (n):
-    print(i)
