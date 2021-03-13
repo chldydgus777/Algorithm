@@ -1,4 +1,4 @@
-# 그룹단어 체커
+# 그룹단어 체커 [https://www.acmicpc.net/problem/1316]
 #----------------------------------------1316----------다시풀어보기
 # n = int(input())
 
@@ -18,26 +18,58 @@
 #             num += 1 
 
 
-# 설탕 배달
+# 설탕 배달 [https://www.acmicpc.net/problem/2839]
 #----------------------------------------2839----------
-sugar = int(input())
-bag = 0
+# sugar = int(input())
+# bag = 0
 
-while True:
-    if sugar % 5 == 0:
-        bag = bag + (sugar // 5)
-        print(bag)
-        break
+# while True:
+#     if sugar % 5 == 0:
+#         bag = bag + (sugar // 5)
+#         print(bag)
+#         break
     
-    sugar -= 3
-    bag += 1 
+#     sugar -= 3
+#     bag += 1 
     
-    if sugar < 0 :
-        print(-1)
+#     if sugar < 0 :
+#         print(-1)
+#         break
+
+
+
+#Fly me to the Alpha Centauri [https://www.acmicpc.net/problem/1011]
+#----------------------------------------2839----------
+
+
+
+# 베르트랑 공준 [https://www.acmicpc.net/problem/4948]
+#----------------------------------------2839----------
+from sys import stdin
+import math
+read = stdin.readline
+
+    def sosu(i):
+    if i%2 ==0 and i != 2:
+        return False
+    for j in range(2, int(math.sqrt(i))+1):
+        if i%j ==0:
+        return False
+    return True
+    
+    lst = []
+    for k in range(2, 2*(123456)+1):
+    if sosu(k):
+        lst.append(k)
+
+    while True:
+    N  = int(read())
+    if N == 0:
         break
-        
 
+    cnt = 0
+    for x in lst:
+        if N < x <= N*2:
+        cnt += 1
 
-# 봉지 종류 2개 3kg, 5kg
-# 가능하다면 5kg를 많이들고가는게 benefit
-# 최소한의 봉지로 들고가는게 좋다
+    print(cnt)
