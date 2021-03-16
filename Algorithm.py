@@ -71,6 +71,22 @@
 #     print(format(st_aver, ".3f")+"%")
 
 
+# C = int(input())
+
+# for i in range(C):
+#     j = list(map(int, input().split()))
+#     average = sum(j[1:]) / j[0]
+#     count = 0
+#     for l in range(1, len(j)):
+#         if j[l] > average :
+#             count += 1
+#     student_average = (count / j[0] * 100)
+#     print(format(student_average, ".3f")+"%")
+
+
+
+
+
 # 셀프넘버
 #----------------------------------------4673----------
 # def d(n):
@@ -168,25 +184,22 @@
 #     if prime(i):
 #         print(i)
 
-finding_target = 14
-finding_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
 
-def is_existing_target_number_binary(target, array):
-    min = 0
-    max = len(array) - 1
-    guess = (min + max) // 2
+# 더하기 사이클
 
-    while min <= max:  # 최소값보다 최댓값이 작거나 같을때까지 반복문
-        if array[guess] == target:
-            return True
-        elif array[guess] < target:
-            min = guess + 1
-        else:
-            max = guess - 1
-        guess + (max + min) // 2
-    return False
+N = int(input())
+n = N
+other = -1
+cycle = 0
+
+while other != N :
+    v1 = (n//10) + (n%10)
+    v2 = (v1%10) + ((n%10)*10)
+    other = v2
+    n = v2
+    cycle += 1
+    
+print(cycle)
 
 
-result = is_existing_target_number_binary(finding_target, finding_numbers)
-print(result)

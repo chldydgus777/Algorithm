@@ -127,11 +127,22 @@
 # profile("최용현")
 # profile("가나다")
 
-def profile(name, age, *lang):
-    print("이름 : {0} \t 나이 : {1} 살\t".format(name, age), end=" ")
-    for l in lang:
-        print(l, end=" ")
-    print()
+# def profile(name, age, *lang):
+#     print("이름 : {0} \t 나이 : {1} 살\t".format(name, age), end=" ")
+#     for l in lang:
+#         print(l, end=" ")
+#     print()
 
-profile("유재석", 20, 'python', 'java', 'C++')
-profile("최용현", 30, 'python', "react")
+# profile("유재석", 20, 'python', 'java', 'C++')
+# profile("최용현", 30, 'python', "react")
+
+# def std_weight(height, gender): #키 미터 단위 (실수), 젠더 "남자"/ "여자"
+#     if gender == "남자" :
+#         return height * height * 22
+#     else :
+#         return height * height * 21
+        
+# height = 173
+# gender = "남자"
+# weight = round(std_weight(height / 100, gender),2)
+# print("키 {1}cm {0}의 평균 무게는 {2}kg입니다".format(gender, height, weight))
