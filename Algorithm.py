@@ -71,21 +71,6 @@
 #     print(format(st_aver, ".3f")+"%")
 
 
-# C = int(input())
-
-# for i in range(C):
-#     j = list(map(int, input().split()))
-#     average = sum(j[1:]) / j[0]
-#     count = 0
-#     for l in range(1, len(j)):
-#         if j[l] > average :
-#             count += 1
-#     student_average = (count / j[0] * 100)
-#     print(format(student_average, ".3f")+"%")
-
-
-
-
 
 # 셀프넘버
 #----------------------------------------4673----------
@@ -186,20 +171,17 @@
 
 
 
-# 더하기 사이클
+#셀프넘버
+def d(n): 
+    value = n
+    for c in str(n):
+        value += int(c) # 21 = 1 + 5 + 15
+    return value
 
-N = int(input())
-n = N
-other = -1
-cycle = 0
+list = []
+for l in range(1,10001):
+    list.append(d(l))
 
-while other != N :
-    v1 = (n//10) + (n%10)
-    v2 = (v1%10) + ((n%10)*10)
-    other = v2
-    n = v2
-    cycle += 1
-    
-print(cycle)
-
-
+for i in range(1,10001):
+    if i not in list :
+        print(i)
