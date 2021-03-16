@@ -56,7 +56,7 @@
 #     if i%j ==0:
 #       return False
 #   return True
-  
+
 # lst = []
 # for k in range(2, 2*(123456)+1):
 #   if sosu(k):
@@ -75,16 +75,20 @@
 #   print(cnt)
 
 
-# 영화감독 숌 [https://www.acmicpc.net/problem/1436]
+#영화감독 숌 [https://www.acmicpc.net/problem/1436]
 #----------------------------------------1436----------
 # N = int(input())
 # movie = 666
-# # N = 2 
+
 # while N:
-#     if "666" in str(movie): 
-#         N -= 1  
-#     movie += 1  
-#     print(movie - 1)
+#     if "666" in str(movie):
+#         N -= 1
+#     movie += 1
 
+# print(movie - 1)
 
+# 신나는 함수 실행 [https://www.acmicpc.net/problem/9184]
+#----------------------------------------9184----------
+
+a, b, c = input().split()
 
