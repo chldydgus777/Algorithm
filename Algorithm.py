@@ -169,19 +169,22 @@
 #     if prime(i):
 #         print(i)
 
+word = input().upper()
 
+alphabet = list(set(word))
+count = 0
+b = []
 
-#셀프넘버
-def d(n): 
-    value = n
-    for c in str(n):
-        value += int(c) # 21 = 1 + 5 + 15
-    return value
-
-list = []
-for l in range(1,10001):
-    list.append(d(l))
-
-for i in range(1,10001):
-    if i not in list :
-        print(i)
+for char in alphabet:
+    cnt = word.count(char) #기존단어 길이
+#     if cnt >= count :
+#         if cnt == count :
+#             b.append(char)
+#         else :
+#             b = []
+#             b.append(char)
+#         count =  cnt
+# if len(b) >= 2 :
+#     print('?')
+# else :
+    print(cnt)
