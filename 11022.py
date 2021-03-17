@@ -2,8 +2,8 @@
 #----------------------------------------11022----------
 import sys
 
-C = sys.stdin.readline()
-C = int(C)
+C = int(sys.stdin.readline())
+
 
 for i in range(C):
     A, B = map(int, sys.stdin.readline().split())
